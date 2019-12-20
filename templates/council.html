@@ -1,14 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<script src="assets/js/jquery-1.8.3.min.js"></script>
-	<script src="assets/js/animatescroll.js"></script>
+  {% load static %}
+	<script src="{% static 'assets/js/jquery-1.8.3.min.js' %}"></script>
+	<script src="{% static 'assets/js/animatescroll.js' %}"></script>
 	<title>CSEA | IIT Bombay</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 8]><script src="{% static 'assets/js/ie/html5shiv.js' %}"></script><![endif]-->
+	<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="{% static 'assets/css/ie8.css' %}" /><![endif]-->
 </head>
 <body class="homepage">
 	<div id="page-wrapper">
@@ -24,20 +25,20 @@
 		<!-- Navigation panel -->
 		<nav id="nav">
 			<ul>
-				<li ><a href="index.html"><img src="icons/home.png" width="40%" height="40%" /></a>
+				<li ><a href="index.html"><img src="{% static 'icons/home.png' %}" width="40%" height="40%" /></a>
 					<ul><li><a href="index.html">HOME</a></li></ul>
 				</li>
-				<li ><a href="events.html"><img src="icons/events.png" width="40%" height="40%" /></a>
+				<li ><a href="events.html"><img src="{% static 'icons/events.png' %}" width="40%" height="40%" /></a>
 					<ul><li><a href="events.html">EVENTS</a></li></ul>
 				</li>
-				<li ><a href="gallery.html"><img src="icons/gallery.png" width="40%" height="40%" /></a>
+				<li ><a href="gallery.html"><img src="{% static 'icons/gallery.png' %}" width="40%" height="40%" /></a>
 					<ul><li><a href="gallery.html">GALLERY</a></li></ul>
 				</li>
-				<li class="current"><a href="council.html"><img src="icons/council.png" width="40%" height="40%" /></a>
+				<li class="current"><a href="council.html"><img src="{% static 'icons/council.png' %}" width="40%" height="40%" /></a>
 					<ul><li><a href="council.html">COUNCIL</a></li></ul>
 				</li>
 
-				<li><a><img src="icons/archives.png" width="40%" height="40%" /></a>
+				<li><a><img src="{% static 'icons/archives.png' %}" width="40%" height="40%" /></a>
 					<ul>
 						<li><a href="posts.html">Announcements</a></li>
 						<li><a href="expgallery.html">Expanded Gallery</a></li>
@@ -74,7 +75,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/dgsec.jpg"></img> 
+								<img src="{% static 'images/council/dgsec.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">DGSec</div>
@@ -119,7 +120,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/csea_gsec.jpg"></img> 
+								<img src="{% static 'images/council/csea_gsec.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">CSEA GSec</div>
@@ -164,7 +165,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/joint_secy.jpg"></img> 
+								<img src="{% static 'images/council/joint_secy.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">Joint Secretary</div>
@@ -213,7 +214,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/soc_secy_ug_1.jpg"></img> 
+								<img src="{% static 'images/council/soc_secy_ug_1.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">Social Secretary, UG</div>
@@ -256,7 +257,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/soc_secy_ug_2.jpg"></img> 
+								<img src="{% static 'images/council/soc_secy_ug_2.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">Social Secretary, UG</div>
@@ -299,7 +300,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/soc_secy_pg.jpg"></img> 
+								<img src="{% static 'images/council/soc_secy_pg.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">Social Secretary, PG</div>
@@ -347,7 +348,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/sports_secy_ug_1.jpg"></img> 
+								<img src="{% static 'images/council/sports_secy_ug_1.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">Sports Secretary, UG</div>
@@ -390,7 +391,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/sports_secy_ug_2.jpg"></img> 
+								<img src="{% static 'images/council/sports_secy_ug_2.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">Sports Secretary, UG</div>
@@ -433,7 +434,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/sports_secy_pg.jpg"></img> 
+								<img src="{% static 'images/council/sports_secy_pg.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">Sports Secretary, PG</div>
@@ -481,7 +482,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/alumni_secy.jpg"></img> 
+								<img src="{% static 'images/council/alumni_secy.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">Alumni Secretary</div>
@@ -527,7 +528,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/web_secy.jpg"></img> 
+								<img src="{% static 'images/council/web_secy.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">Web Secretary</div>
@@ -572,7 +573,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/cr_btech2.jpg"></img> 
+								<img src="{% static 'images/council/cr_btech2.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">CR, BTech 2</div>
@@ -620,7 +621,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/cr_btech3.jpg"></img> 
+								<img src="{% static 'images/council/cr_btech3.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">CR, BTech 3</div>
@@ -666,7 +667,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/cr_mtech2_1.jpg"></img> 
+								<img src="{% static 'images/council/cr_mtech2_1.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">CR, MTech 2</div>
@@ -712,7 +713,7 @@
 						<div class="flip">
 							<div class="flip_front">
 								<!-- Image -->
-								<img src="images/council/cr_mtech2_2.jpg"></img> 
+								<img src="{% static 'images/council/cr_mtech2_2.jpg' %}"></img> 
 								<!-- Designation -->
 								<div class="label_wrapper post">
 									<div class="label post">CR, MTech 2</div>
@@ -820,14 +821,14 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/skel-viewport.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="assets/js/main.js"></script>
-	<script src="assets/animatescroll.js"></script>
+	<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+	<script src="{% static 'assets/js/jquery.dropotron.min.js' %}"></script>
+	<script src="{% static 'assets/js/skel.min.js' %}"></script>
+	<script src="{% static 'assets/js/skel-viewport.min.js' %}"></script>
+	<script src="{% static 'assets/js/util.js' %}"></script>
+	<!--[if lte IE 8]><script src="{% static 'assets/js/ie/respond.min.js' %}"></script><![endif]-->
+	<script src="{% static 'assets/js/main.js' %}"></script>
+	<script src="{% static 'assets/animatescroll.js' %}"></script>
 
 
 
