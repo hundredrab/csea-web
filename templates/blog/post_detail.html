@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ object.title }} | Blog | CSEA@IITBombay
+{% endblock %}
+
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/css/blog.css' %}" />
+{% endblock %}
+
+{% block content %}
+  <main class="container">
+      <section>
+        <h2>
+            {{ object.title }}
+        </h2>
+        <div class="dates">
+          <span class="published">{{ object.date_published }}</span>
+          <br>
+          Modified: <span class="modified">{{ object.last_modified }}</span>
+        </div>
+        <img src="{{ object.image.url }}" height=200>
+        <div class="text">
+          {{ object.text }}
+        </div>
+        <hr>
+      </section>
+  </main>
+{% endblock %}
+
+
+</body>
+</html>

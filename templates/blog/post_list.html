@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}
+  CSEA | IIT Bombay
+{% endblock %}
+
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/css/blog.css' %}" />
+{% endblock %}
+
+{% block content %}
+  <main class="container">
+    {% for post in object_list %}
+      <section>
+        <h2>
+          <a href="{{ post.get_absolute_url }}">
+            {{ post.title }}
+          </a>
+        </h2>
+        <div class="dates">
+          <span class="published">{{ post.date_published }}</span>
+          <br>
+          Modified: <span class="modified">{{ post.last_modified }}</span>
+        </div>
+        <img src="{{ post.image.url }}" height=200>
+        <div class="text">
+          {{ post.text | truncatewords:50 }}
+          <a href="{{ post.get_absolute_url }}">
+             Read More 
+          </a>
+        </div>
+        <hr>
+      </section>
+    {% endfor %}
+  </main>
+{% endblock %}
+
+
+</body>
+</html>

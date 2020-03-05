@@ -23,6 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='index.html'), name='home'),
     path('council/', TemplateView.as_view(template_name='council.html'), name='council'),
+    path('events/', include('events.urls')),
+    path('council/', include('events.urls')),
+    path('blog/', include('blog.urls')),
 ] + static(
         settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
 ) + static(
